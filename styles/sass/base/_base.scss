@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.m0-a {
+    margin: 0 auto;
+}
+
+.ta-c {
+    text-align: center;
+}
+
+.ta-l {
+    text-align-last: left;
+}
+
+.ta-r {
+    text-align: right;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-i {
+    display: inline-flex;
+}
+
+.ai-c {
+    align-items: center;
+}
+
+.ai-e {
+    align-items: end;
+}
+
+.ai-s {
+    align-items: start;
+}
+
+.jc-c {
+    justify-content: center;
+}
+
+.jc-e {
+    justify-content: end;
+}
+
+.jc-s {
+    justify-content: start;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.fd-c {
+    flex-direction: column;
+}
+
+.flex-w {
+    flex-wrap: wrap;
+}
+
+.flex-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.po-r {
+    position: relative;
+}
+
+.po-a {
+    position: absolute;
+}
+
+body {
+    background-color: $main-bg;
+    color: $light;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.btn,
+.btn-primary {
+    font-family: "Oxanium";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 16px 45px;
+    background: linear-gradient(97deg, #144558 -3.31%, #0e3b4c 112.39%), #0a1f35;
+    transform: skewX(-10deg);
+    display: inline-block;
+    margin: 32px 0;
+}
+
+.btn-primary {
+    background-color: #0a1f35;
+}

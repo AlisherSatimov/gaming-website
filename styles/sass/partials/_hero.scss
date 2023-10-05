@@ -1,0 +1,124 @@
+.site-hero {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    position: relative;
+    z-index: 1;
+
+    .site-hero__content {
+        display: inline-flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 133px;
+
+        h2 {
+            font-family: "Oxanium";
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+
+            span {
+                color: #00eebd;
+            }
+        }
+        h1 {
+            color: #fff;
+            font-family: "Oxanium";
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+
+    .site-hero__image {
+        display: flex;
+        gap: 30px;
+
+        .left-img,
+        .right-img {
+            display: flex;
+            flex-direction: column;
+            gap: 57px;
+
+            img {
+                width: 270px;
+                height: 294px;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+        }
+
+        .right-img {
+            margin-top: 27px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1170px) {
+    .site-hero {
+        margin-top: 10px;
+
+        .site-hero__content {
+            gap: 8px;
+            margin-top: 84px;
+
+            h1 {
+                font-size: 48px;
+                font-weight: 600;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+
+            .join-btn {
+                .btn {
+                    margin: 14px 0;
+                }
+            }
+        }
+
+        .site-hero__image {
+            gap: 24px;
+
+            .left-img,
+            .right-img {
+                gap: 38px;
+
+                img {
+                    width: 155px;
+                    height: 168px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .site-hero {
+        margin-top: 10px;
+        flex-wrap: wrap;
+
+        .site-hero__content {
+            gap: 8px;
+            margin-top: 0;
+
+            h1 {
+                font-size: 32px;
+                font-weight: 700;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .join-btn {
+                .btn {
+                    margin: 16px 0 51px;
+                }
+            }
+        }
+    }
+}

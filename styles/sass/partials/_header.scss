@@ -1,0 +1,209 @@
+#site-header-hero {
+    max-width: 100%;
+    height: 783px;
+    background: url(/images/header-hero__background-image.png);
+    background-position-x: center;
+    background-position-y: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    position: relative;
+
+    &::after,
+    &::before {
+        content: "";
+        width: 734px;
+        height: 734px;
+        flex-shrink: 0;
+        border-radius: 734px;
+        background: rgba(63, 210, 236, 0.3);
+        filter: blur(250px);
+
+        position: absolute;
+        bottom: 0;
+        transform: translateY(50%);
+    }
+    &::after {
+        bottom: auto;
+        left: auto;
+        right: 0;
+        transform: translateY(-80%);
+    }
+
+    .site-navbar {
+        display: flex;
+        justify-content: center;
+        padding: 30px 0;
+        align-items: center;
+
+        position: relative;
+        z-index: 10;
+
+        .navbar-items {
+            width: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            li {
+                font-family: "Oxanium";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
+
+        .header-logo {
+            margin: 0 100px;
+            width: 130px;
+            height: 100px;
+        }
+
+        label {
+            display: none;
+        }
+
+        .nav-menu {
+            display: none;
+            width: 768px;
+            height: 670px;
+            padding: 20px 40px;
+            background-color: #040d17;
+            overflow: hidden;
+            position: absolute;
+            top: -670px;
+            left: 0;
+            transition: 1s ease-in-out;
+
+            &::after,
+            &::before {
+                content: "";
+                background: #000;
+                width: 734px;
+                height: 734px;
+                flex-shrink: 0;
+                border-radius: 734px;
+                background: rgba(63, 210, 236, 0.3);
+                filter: blur(250px);
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                transform: translateY(70%);
+            }
+
+            &::after {
+                bottom: auto;
+                left: 0;
+                transform: translateY(-100%);
+            }
+
+            .menu-items {
+                font-family: "Oxanium";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+                margin-top: 64px;
+            }
+
+            .nav-menu-navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                z-index: 20;
+
+                .nav-menu-navbar-logo {
+                    width: 52px;
+                    height: 40px;
+                }
+                label {
+                    img {
+                        width: 24px;
+                        height: 24px;
+                        flex-shrink: 0;
+                    }
+                }
+            }
+        }
+
+        input[type="checkbox"]:checked + .nav-menu {
+            display: block;
+            top: 0px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1170px) {
+    #site-header-hero {
+        height: 535px;
+        background-size: 1170px;
+        z-index: 999;
+
+        .site-navbar {
+            padding: 20px 40px !important;
+            justify-content: space-between;
+
+            .navbar-items {
+                display: none;
+            }
+
+            .header-logo {
+                margin: 0;
+                width: 78px;
+                height: 60px;
+            }
+
+            label {
+                display: inline-block;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+
+        .container {
+            max-width: 768px;
+            padding: 0 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #site-header-hero {
+        height: 753px;
+        background-size: 688px 753px;
+        background-size: cover;
+
+        .container {
+            max-width: 375px;
+            padding: 20px 20px !important;
+        }
+        .site-navbar {
+            .header-logo {
+                width: 52px;
+                height: 40px;
+            }
+
+            label {
+                img {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+
+            .nav-menu {
+                width: 375px;
+            }
+        }
+    }
+}
