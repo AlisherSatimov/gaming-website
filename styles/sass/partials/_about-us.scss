@@ -1,0 +1,151 @@
+.container {
+    width: 1100px;
+}
+#about-us {
+    .site-about-us {
+        display: flex;
+
+        h2 {
+            @extend .title;
+        }
+    }
+
+    .about-img {
+        width: 384px;
+        height: 395px;
+        background: url(/images/about_us_img.jpeg);
+        background-size: cover;
+        background-position: center center;
+        clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+        margin-right: 64px;
+    }
+
+    .about-us__content {
+        width: 650px;
+
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+
+        .live-tables {
+            width: 650px;
+
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .table-content {
+            width: 202px;
+            height: 92px;
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 30px;
+            gap: 10px;
+
+            background: linear-gradient(
+                144deg,
+                #0a1f35 -9.37%,
+                #040d17 115.21%
+            );
+            clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+            border: 1px solid #346296;
+
+            h6 {
+                color: $body-light-col;
+                font-family: "Inter";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+
+            h3 {
+                font-family: "Oxanium";
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+    }
+    p {
+        width: 650px;
+        color: $body-light-col;
+        font-family: "Inter";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 175%;
+    }
+
+    .btn-primary {
+        margin: 0;
+    }
+    .outside {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1170px) {
+    #about-us {
+        .site-about-us {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .about-img {
+            width: 334px;
+            height: 342px;
+            margin-right: 20px;
+        }
+
+        .about-us__content {
+            width: 334px;
+
+            .live-tables {
+                width: 334px;
+                flex-wrap: wrap;
+                gap: 40px;
+            }
+
+            .table-content {
+                width: 100%;
+                align-items: center;
+                padding: 0;
+            }
+
+            p,
+            .btn-primary {
+                display: none;
+            }
+        }
+
+        .center {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .outside {
+            display: inline-flex;
+            margin-top: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #about-us {
+        .site-about-us {
+            gap: 40px;
+        }
+        .about-img {
+            margin-right: auto;
+        }
+        .outside {
+            display: inline-flex;
+            margin-top: auto;
+            text-align: center;
+        }
+    }
+}

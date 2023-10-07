@@ -148,7 +148,7 @@
         z-index: 999;
 
         .site-navbar {
-            padding: 20px 40px !important;
+            padding: 20px 40px;
             justify-content: space-between;
 
             .navbar-items {
@@ -170,11 +170,6 @@
                 }
             }
         }
-
-        .container {
-            max-width: 768px;
-            padding: 0 40px;
-        }
     }
 }
 
@@ -184,10 +179,6 @@
         background-size: 688px 753px;
         background-size: cover;
 
-        .container {
-            max-width: 375px;
-            padding: 20px 20px !important;
-        }
         .site-navbar {
             .header-logo {
                 width: 52px;

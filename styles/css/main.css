@@ -121,8 +121,43 @@ body {
   margin: 0 auto;
 }
 
-.btn,
-.btn-primary {
+section .title, section #about-us .site-about-us h2, #about-us .site-about-us section h2 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-family: "Oxanium";
+  position: relative;
+  padding-bottom: 25px;
+  text-align: center;
+  margin: 160px 0 64px;
+}
+section .title::after, section #about-us .site-about-us h2::after, #about-us .site-about-us section h2::after {
+  content: "";
+  width: 50px;
+  height: 4px;
+  position: absolute;
+  -webkit-clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+          clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #00eebd;
+}
+
+@media only screen and (max-width: 1170px) {
+  section .title, section #about-us .site-about-us h2, #about-us .site-about-us section h2 {
+    font-size: 32px;
+    margin: 100px 0 64px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  section .title, section #about-us .site-about-us h2, #about-us .site-about-us section h2 {
+    font-size: 24px;
+    margin: 80px 0 40px;
+  }
+}
+.btn {
   font-family: "Oxanium";
   font-size: 18px;
   font-style: normal;
@@ -137,8 +172,147 @@ body {
 
 .btn-primary {
   background-color: #0a1f35;
+  font-family: "Oxanium";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 16px 45px;
+  transform: skewX(-10deg);
+  display: inline-block;
+  margin: 32px 0;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 1100px;
+}
+
+#about-us .site-about-us {
+  display: flex;
+}
+#about-us .about-img {
+  width: 384px;
+  height: 395px;
+  background: url(/images/about_us_img.jpeg);
+  background-size: cover;
+  background-position: center center;
+  -webkit-clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+          clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+  margin-right: 64px;
+}
+#about-us .about-us__content {
+  width: 650px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+#about-us .about-us__content .live-tables {
+  width: 650px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#about-us .about-us__content .table-content {
+  width: 202px;
+  height: 92px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  gap: 10px;
+  background: linear-gradient(144deg, #0a1f35 -9.37%, #040d17 115.21%);
+  -webkit-clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+          clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+  border: 1px solid #346296;
+}
+#about-us .about-us__content .table-content h6 {
+  color: #f5f5f5;
+  font-family: "Inter";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+#about-us .about-us__content .table-content h3 {
+  font-family: "Oxanium";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+#about-us p {
+  width: 650px;
+  color: #f5f5f5;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%;
+}
+#about-us .btn-primary {
+  margin: 0;
+}
+#about-us .outside {
+  display: none;
+}
+
+@media only screen and (max-width: 1170px) {
+  #about-us .site-about-us {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  #about-us .about-img {
+    width: 334px;
+    height: 342px;
+    margin-right: 20px;
+  }
+  #about-us .about-us__content {
+    width: 334px;
+  }
+  #about-us .about-us__content .live-tables {
+    width: 334px;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  #about-us .about-us__content .table-content {
+    width: 100%;
+    align-items: center;
+    padding: 0;
+  }
+  #about-us .about-us__content p,
+  #about-us .about-us__content .btn-primary {
+    display: none;
+  }
+  #about-us .center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #about-us .outside {
+    display: inline-flex;
+    margin-top: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #about-us .site-about-us {
+    gap: 40px;
+  }
+  #about-us .about-img {
+    margin-right: auto;
+  }
+  #about-us .outside {
+    display: inline-flex;
+    margin-top: auto;
+    text-align: center;
+  }
+}
 #site-header-hero {
   max-width: 100%;
   height: 783px;
@@ -268,7 +442,7 @@ body {
     z-index: 999;
   }
   #site-header-hero .site-navbar {
-    padding: 20px 40px !important;
+    padding: 20px 40px;
     justify-content: space-between;
   }
   #site-header-hero .site-navbar .navbar-items {
@@ -286,20 +460,12 @@ body {
     width: 40px;
     height: 40px;
   }
-  #site-header-hero .container {
-    max-width: 768px;
-    padding: 0 40px;
-  }
 }
 @media only screen and (max-width: 768px) {
   #site-header-hero {
     height: 753px;
     background-size: 688px 753px;
     background-size: cover;
-  }
-  #site-header-hero .container {
-    max-width: 375px;
-    padding: 20px 20px !important;
   }
   #site-header-hero .site-navbar .header-logo {
     width: 52px;
@@ -325,6 +491,7 @@ body {
   flex-direction: column;
   gap: 10px;
   margin-top: 133px;
+  align-items: flex-start;
 }
 .site-hero .site-hero__content h2 {
   font-family: "Oxanium";
@@ -381,7 +548,7 @@ body {
   .site-hero .site-hero__content h2 {
     font-size: 28px;
   }
-  .site-hero .site-hero__content .join-btn .btn {
+  .site-hero .site-hero__content .btn {
     margin: 14px 0;
   }
   .site-hero .site-hero__image {
@@ -413,7 +580,19 @@ body {
   .site-hero .site-hero__content h2 {
     font-size: 24px;
   }
-  .site-hero .site-hero__content .join-btn .btn {
+  .site-hero .site-hero__content .btn {
     margin: 16px 0 51px;
+  }
+}
+@media only screen and (max-width: 1170px) {
+  .container {
+    max-width: 768px;
+    padding: 0 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 375px;
+    padding: 20px 20px;
   }
 }/*# sourceMappingURL=main.css.map */

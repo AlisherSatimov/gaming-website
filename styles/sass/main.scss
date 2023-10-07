@@ -1,4 +1,15 @@
 @import "base/variables";
 @import "base/base";
 @import "base/mixins";
-@import "partials/partials";
+
+// PARTIALS
+
+@import "partials/about-us";
+@import "partials/contact-us";
+@import "partials/footer";
+@import "partials/header";
+@import "partials/hero";
+@import "partials/latest-news";
+@import "partials/our-shop";
+@import "partials/tournaments";
+@import "partials/responsive-container";

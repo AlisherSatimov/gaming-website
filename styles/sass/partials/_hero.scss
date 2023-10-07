@@ -10,6 +10,7 @@
         flex-direction: column;
         gap: 10px;
         margin-top: 133px;
+        align-items: flex-start;
 
         h2 {
             font-family: "Oxanium";
@@ -73,10 +74,8 @@
                 font-size: 28px;
             }
 
-            .join-btn {
-                .btn {
-                    margin: 14px 0;
-                }
+            .btn {
+                margin: 14px 0;
             }
         }
 
@@ -114,10 +113,8 @@
                 font-size: 24px;
             }
 
-            .join-btn {
-                .btn {
-                    margin: 16px 0 51px;
-                }
+            .btn {
+                margin: 16px 0 51px;
             }
         }
     }

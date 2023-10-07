@@ -120,8 +120,51 @@ body {
     margin: 0 auto;
 }
 
-.btn,
-.btn-primary {
+section {
+    .title {
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        font-family: "Oxanium";
+        position: relative;
+        padding-bottom: 25px;
+        text-align: center;
+        margin: 160px 0 64px;
+
+        &::after {
+            content: "";
+            width: 50px;
+            height: 4px;
+            position: absolute;
+            clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #00eebd;
+        }
+    }
+}
+
+@media only screen and (max-width: 1170px) {
+    section {
+        .title {
+            font-size: 32px;
+            margin: 100px 0 64px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    section {
+        .title {
+            font-size: 24px;
+            margin: 80px 0 40px;
+        }
+    }
+}
+
+.btn {
     font-family: "Oxanium";
     font-size: 18px;
     font-style: normal;
@@ -136,4 +179,18 @@ body {
 
 .btn-primary {
     background-color: #0a1f35;
+    font-family: "Oxanium";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 16px 45px;
+    transform: skewX(-10deg);
+    display: inline-block;
+    margin: 32px 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
 }
