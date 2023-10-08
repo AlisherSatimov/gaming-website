@@ -1,0 +1,114 @@
+#contact-us {
+    .site-contact-us {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact-info__wrapper {
+        width: 442px;
+        height: 322px;
+        clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+        background: linear-gradient(143deg, #0a1f35 -9.17%, #040d17 112.72%);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 40px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            left: 5px;
+            top: 0;
+        }
+
+        h4 {
+            color: $body-light-col;
+            font-family: "Oxanium";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        p {
+            color: $body-lighten-col;
+            font-family: "Inter";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+    .location-info {
+        &::before {
+            content: url(/icons/location.svg);
+        }
+    }
+
+    .phone-num-info {
+        &::before {
+            content: url(/icons/call.svg);
+        }
+    }
+
+    .email-info {
+        &::before {
+            content: url(/icons/sms.svg);
+        }
+    }
+
+    .contact-form__wrapper {
+        width: 672px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        input {
+            clip-path: polygon(2% 0, 100% 0%, 98% 100%, 0% 100%);
+            border-radius: 0;
+            border: 1px solid $light-blue-col;
+            background: linear-gradient(
+                143deg,
+                #0a1f35 -9.17%,
+                #040d17 112.72%
+            );
+
+            color: $input-pl;
+            font-family: "Inter";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding: 20px;
+        }
+
+        label {
+            color: $light;
+            font-family: "Oxanium";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .input-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            width: 100%;
+        }
+    }
+
+    .input-row {
+        display: flex;
+        gap: 24px;
+    }
+}
