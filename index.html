@@ -360,7 +360,7 @@
                         <p>contact@gamingcompany.com</p>
                     </div>
                 </div>
-                <form action="\subscribe" class="contact-form__wrapper">
+                <form action="/subscribe" class="contact-form__wrapper">
                     <div class="input-row">
                         <div class="first-name input-wrapper">
                             <label for="first_name">First Name*</label>
@@ -389,15 +389,29 @@
                             />
                         </div>
                         <div class="input-wrapper">
-                            <label for="last_name"
+                            <label for="select"
                                 >How did you hear about us?</label
                             >
                             <input
                                 type="text"
-                                id="last_name"
-                                placeholder="Last name"
+                                id="select"
+                                placeholder="Select option"
                             />
                         </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="message">Message</label>
+                        <textarea
+                            id="message"
+                            cols="30"
+                            rows="7"
+                            placeholder="Write your message"
+                        ></textarea>
+                    </div>
+                    <div class="submit-form-btn-center">
+                        <button type="submit" class="btn-primary">
+                            Submit
+                        </button>
                     </div>
                 </form>
             </div>

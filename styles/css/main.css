@@ -315,12 +315,13 @@ section .title::after, section #about-us .site-about-us h2::after, #about-us .si
 #contact-us .site-contact-us {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 #contact-us .contact-info__wrapper {
   width: 442px;
   height: 322px;
-  -webkit-clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
-          clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+  -webkit-clip-path: polygon(1% 0, 100% 0%, 99% 100%, 0% 100%);
+          clip-path: polygon(1% 0, 100% 0%, 99% 100%, 0% 100%);
   background: linear-gradient(143deg, #0a1f35 -9.17%, #040d17 112.72%);
   display: flex;
   flex-direction: column;
@@ -370,9 +371,10 @@ section .title::after, section #about-us .site-about-us h2::after, #about-us .si
   flex-direction: column;
   gap: 32px;
 }
-#contact-us .contact-form__wrapper input {
-  -webkit-clip-path: polygon(2% 0, 100% 0%, 98% 100%, 0% 100%);
-          clip-path: polygon(2% 0, 100% 0%, 98% 100%, 0% 100%);
+#contact-us .contact-form__wrapper input,
+#contact-us .contact-form__wrapper textarea {
+  -webkit-clip-path: polygon(1% 0, 100% 0%, 99% 100%, 0% 100%);
+          clip-path: polygon(1% 0, 100% 0%, 99% 100%, 0% 100%);
   border-radius: 0;
   border: 1px solid #346296;
   background: linear-gradient(143deg, #0a1f35 -9.17%, #040d17 112.72%);
@@ -392,17 +394,90 @@ section .title::after, section #about-us .site-about-us h2::after, #about-us .si
   font-weight: 400;
   line-height: normal;
 }
+#contact-us .contact-form__wrapper button,
+#contact-us .contact-form__wrapper .button {
+  border: inherit;
+  color: #fff;
+}
 #contact-us .contact-form__wrapper .input-wrapper {
   display: flex;
   flex-direction: column;
   gap: 16px;
   width: 100%;
 }
+#contact-us .contact-form__wrapper .btn-primary {
+  margin: 0;
+}
 #contact-us .input-row {
   display: flex;
   gap: 24px;
 }
 
+@media only screen and (max-width: 1170px) {
+  #contact-us .site-contact-us {
+    flex-wrap: wrap;
+  }
+  #contact-us .contact-info__wrapper {
+    width: 100%;
+    height: 210px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 70px;
+    margin-bottom: 48px;
+    padding-bottom: 0;
+  }
+  #contact-us .contact-info {
+    padding-left: 40px;
+  }
+  #contact-us .contact-info h4 {
+    font-size: 16px;
+  }
+  #contact-us .contact-info p {
+    font-size: 14px;
+  }
+  #contact-us .contact-form__wrapper {
+    width: 100%;
+    gap: 24px;
+  }
+  #contact-us .contact-form__wrapper input,
+  #contact-us .contact-form__wrapper textarea {
+    padding: 20px;
+  }
+  #contact-us .contact-form__wrapper label {
+    font-size: 16px;
+  }
+  #contact-us .contact-form__wrapper .submit-form-btn-center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #contact-us .contact-form__wrapper .btn-primary {
+    margin: 16px 0 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #contact-us .contact-info__wrapper {
+    height: 270px;
+    padding-left: 30px;
+    padding-right: 0;
+    margin-bottom: 48px;
+  }
+  #contact-us .contact-info h4 {
+    font-size: 16px;
+  }
+  #contact-us .contact-info p {
+    font-size: 14px;
+  }
+  #contact-us .contact-form__wrapper .submit-form-btn-center {
+    justify-content: start;
+  }
+  #contact-us .contact-form__wrapper .btn-primary {
+    margin: 0;
+  }
+  #contact-us .input-row {
+    flex-wrap: wrap;
+  }
+}
 #site-header-hero {
   max-width: 100%;
   height: 783px;
