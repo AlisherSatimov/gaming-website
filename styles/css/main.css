@@ -188,10 +188,9 @@ section .title::after, section #about-us .site-about-us h2::after, #about-us .si
   justify-content: center;
 }
 
-.container {
+#about-us .container {
   width: 1100px;
 }
-
 #about-us .site-about-us {
   display: flex;
 }
@@ -373,7 +372,7 @@ section .title::after, section #about-us .site-about-us h2::after, #about-us .si
 }
 #site-header-hero .site-navbar .nav-menu {
   display: none;
-  width: 768px;
+  width: 100%;
   height: 670px;
   padding: 20px 40px;
   background-color: #040d17;
@@ -582,6 +581,96 @@ section .title::after, section #about-us .site-about-us h2::after, #about-us .si
   }
   .site-hero .site-hero__content .btn {
     margin: 16px 0 51px;
+  }
+}
+#tournaments .site-tournaments {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#tournaments .game-card {
+  width: 370px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: linear-gradient(134deg, #071626 -7.75%, rgba(7, 22, 38, 0) 136.66%);
+  margin-bottom: 30px;
+}
+#tournaments .game-card img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  margin-top: -5px;
+}
+#tournaments .card-content {
+  padding: 20px;
+  display: inline-flex;
+  flex-direction: column;
+}
+#tournaments .tournament-game {
+  color: #f5f5f5;
+  font-family: "Oxanium";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+#tournaments .tournament-date {
+  color: #eaeaea;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 10px 0 20px;
+}
+#tournaments .mode__price-content {
+  display: flex;
+  gap: 30px;
+}
+#tournaments .mode__price {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: "Oxanium";
+  color: #eaeaea;
+}
+#tournaments .mode__price p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#tournaments .mode__price span {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+#tournaments .btn-primary {
+  margin: 18px 0;
+}
+
+@media only screen and (max-width: 1170px) {
+  #tournaments .game-card {
+    width: 334px;
+    margin-bottom: 24px;
+  }
+  #tournaments .game-card:nth-child(5), #tournaments .game-card:nth-child(6) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #tournaments .game-card {
+    width: 335px;
+  }
+  #tournaments .game-card:nth-child(4) {
+    display: none;
+  }
+  #tournaments .btn-primary {
+    margin: 0;
   }
 }
 @media only screen and (max-width: 1170px) {

@@ -1,0 +1,113 @@
+#tournaments {
+    .site-tournaments {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .game-card {
+        width: 370px;
+        border-radius: 10px;
+        overflow: hidden;
+        background: linear-gradient(
+            134deg,
+            #071626 -7.75%,
+            rgba(7, 22, 38, 0) 136.66%
+        );
+
+        margin-bottom: 30px;
+
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: top;
+            margin-top: -5px;
+        }
+    }
+
+    .card-content {
+        padding: 20px;
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .tournament-game {
+        color: $body-light-col;
+        font-family: "Oxanium";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .tournament-date {
+        color: $body-lighten-col;
+        font-family: "Inter";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin: 10px 0 20px;
+    }
+
+    .mode__price-content {
+        display: flex;
+        gap: 30px;
+    }
+
+    .mode__price {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        font-family: "Oxanium";
+        color: $body-lighten-col;
+
+        p {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        span {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+
+    .btn-primary {
+        margin: 18px 0;
+    }
+}
+
+@media only screen and (max-width: 1170px) {
+    #tournaments {
+        .game-card {
+            width: 334px;
+            margin-bottom: 24px;
+
+            &:nth-child(5),
+            &:nth-child(6) {
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #tournaments {
+        .game-card {
+            width: 335px;
+
+            &:nth-child(4) {
+                display: none;
+            }
+        }
+        .btn-primary {
+            margin: 0;
+        }
+    }
+}
