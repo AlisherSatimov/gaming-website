@@ -201,3 +201,95 @@ button,
     display: flex;
     justify-content: center;
 }
+
+/* PRELOADER START */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+        146deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(138, 177, 193, 1) 25%,
+        rgba(41, 63, 99, 1) 69%,
+        rgba(0, 0, 0, 1) 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    animation-name: backgroundOpacity;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+}
+
+.threeLoader {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle1,
+.circle2,
+.circle3 {
+    border-radius: 50%;
+    position: absolute;
+    animation-name: loaderAnimetion;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: initial;
+}
+
+.circle1 {
+    border: 3px solid #bcc33a;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    width: 50px;
+    height: 50px;
+    animation-duration: 1.2s;
+}
+
+.circle2 {
+    border: 3px solid $light;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    width: 60px;
+    height: 60px;
+    animation-duration: 1.4s;
+}
+
+.circle3 {
+    border: 3px solid $title-bottom-row;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    width: 70px;
+    height: 70px;
+    animation-duration: 1.6s;
+}
+
+@keyframes loaderAnimetion {
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes backgroundOpacity {
+    to {
+        opacity: 0;
+    }
+}
+
+.loaded .preloader {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+/* PRELOADER END */

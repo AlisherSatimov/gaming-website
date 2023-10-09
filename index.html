@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -30,7 +32,21 @@
         <!-- SITE - HEADER - HERO - START -->
 
         <div id="site-header-hero">
-            <nav class="site-navbar container">
+            <!-- PRELOADER START -->
+            <div class="preloader">
+                <div class="threeLoader">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                </div>
+            </div>
+            <!-- PRELOADER END -->
+            <nav
+                class="site-navbar container"
+                data-aos="fade-down"
+                data-aos-delay="1800"
+                data-aos-duration="1500"
+            >
                 <ul class="navbar-items nav-left">
                     <li><a href="#">Tournaments</a></li>
                     <li><a href="#">Our Team</a></li>
@@ -82,25 +98,55 @@
 
             <div class="site-hero container">
                 <div class="site-hero__content">
-                    <h2>Welcome to the <span>Esports</span></h2>
-                    <h1>Multiverse</h1>
+                    <h2
+                        data-aos="fade-right"
+                        data-aos-delay="2500"
+                        data-aos-duration="1500"
+                    >
+                        Welcome to the <span>Esports</span>
+                    </h2>
+                    <h1
+                        data-aos="fade-right"
+                        data-aos-delay="2600"
+                        data-aos-duration="1500"
+                    >
+                        Multiverse
+                    </h1>
                     <a href="#" class="btn">Join Tournament</a>
                 </div>
 
                 <div class="site-hero__image">
                     <div class="left-img">
-                        <img src="images/hero-images/cs-go.png" alt="cs-go" />
+                        <img
+                            src="images/hero-images/cs-go.png"
+                            alt="cs-go"
+                            data-aos="fade-up"
+                            data-aos-delay="2600"
+                            data-aos-duration="1500"
+                        />
                         <img
                             src="images/hero-images/fortnite.png"
                             alt="fortnite"
+                            data-aos="fade-up"
+                            data-aos-delay="2900"
+                            data-aos-duration="1500"
                         />
                     </div>
 
                     <div class="right-img">
-                        <img src="images/hero-images/pubg.png" alt="pubg" />
+                        <img
+                            src="images/hero-images/pubg.png"
+                            alt="pubg"
+                            data-aos="fade-up"
+                            data-aos-delay="2700"
+                            data-aos-duration="1500"
+                        />
                         <img
                             src="images/hero-images/valorant.png"
                             alt="valorant"
+                            data-aos="fade-up"
+                            data-aos-delay="3000"
+                            data-aos-duration="1500"
                         />
                     </div>
                 </div>
@@ -115,20 +161,44 @@
             <h2 class="title">About Us</h2>
 
             <div class="site-about-us container">
-                <div class="about-img"></div>
+                <div
+                    class="about-img"
+                    data-aos="fade-right"
+                    data-aos-delay="200"
+                    data-aos-duration="1400"
+                    data-aos-offset="100"
+                ></div>
                 <div class="about-us__content">
                     <div class="live-tables">
-                        <div class="table-content">
+                        <div
+                            class="table-content"
+                            data-aos="fade-left"
+                            data-aos-delay="100"
+                            data-aos-duration="1000"
+                            data-aos-offset="20"
+                        >
                             <h6>Tournaments played</h6>
                             <h3>30</h3>
                         </div>
-                        <div class="table-content">
-                            <h6>Tournaments played</h6>
-                            <h3>30</h3>
+                        <div
+                            class="table-content"
+                            data-aos="fade-left"
+                            data-aos-delay="300"
+                            data-aos-duration="1000"
+                            data-aos-offset="20"
+                        >
+                            <h6>Tournaments won</h6>
+                            <h3>10</h3>
                         </div>
-                        <div class="table-content">
-                            <h6>Tournaments played</h6>
-                            <h3>30</h3>
+                        <div
+                            class="table-content"
+                            data-aos="fade-left"
+                            data-aos-delay="500"
+                            data-aos-duration="1000"
+                            data-aos-offset="20"
+                        >
+                            <h6>Awards won</h6>
+                            <h3>5</h3>
                         </div>
                     </div>
                     <p>
@@ -165,7 +235,13 @@
             <h2 class="title">Tournaments</h2>
 
             <div class="site-tournaments container">
-                <div class="game-card">
+                <div
+                    class="game-card"
+                    data-aos="zoom-in"
+                    data-aos-delay="100"
+                    data-aos-duration="1400"
+                    data-aos-offset="80"
+                >
                     <img src="images/tournaments-img/cs-go.png" alt="cs-go" />
                     <div class="card-content">
                         <h4 class="tournament-game">
@@ -191,7 +267,13 @@
                     </div>
                 </div>
 
-                <div class="game-card">
+                <div
+                    class="game-card"
+                    data-aos="zoom-in"
+                    data-aos-delay="200"
+                    data-aos-duration="1400"
+                    data-aos-offset="80"
+                >
                     <img src="images/tournaments-img/pubg.png" alt="pubg" />
                     <div class="card-content">
                         <h4 class="tournament-game">
@@ -217,7 +299,13 @@
                     </div>
                 </div>
 
-                <div class="game-card">
+                <div
+                    class="game-card"
+                    data-aos="zoom-in"
+                    data-aos-delay="300"
+                    data-aos-duration="1400"
+                    data-aos-offset="80"
+                >
                     <img
                         src="images/tournaments-img/freefire.png"
                         alt="freefire"
@@ -246,7 +334,13 @@
                     </div>
                 </div>
 
-                <div class="game-card">
+                <div
+                    class="game-card"
+                    data-aos="zoom-in"
+                    data-aos-delay="100"
+                    data-aos-duration="1400"
+                    data-aos-offset="80"
+                >
                     <img
                         src="images/tournaments-img/call-of-duty.png"
                         alt="call of duty"
@@ -275,7 +369,13 @@
                     </div>
                 </div>
 
-                <div class="game-card">
+                <div
+                    class="game-card"
+                    data-aos="zoom-in"
+                    data-aos-delay="200"
+                    data-aos-duration="1400"
+                    data-aos-offset="80"
+                >
                     <img
                         src="images/tournaments-img/cs-go-unlimete.png"
                         alt="cs-go unlimite"
@@ -304,7 +404,13 @@
                     </div>
                 </div>
 
-                <div class="game-card">
+                <div
+                    class="game-card"
+                    data-aos="zoom-in"
+                    data-aos-delay="300"
+                    data-aos-duration="1400"
+                    data-aos-offset="80"
+                >
                     <img
                         src="images/tournaments-img/overwatch-league.png"
                         alt="cs-go"
@@ -346,7 +452,12 @@
             <h2 class="title">Contact Us</h2>
 
             <div class="site-contact-us container">
-                <div class="contact-info__wrapper">
+                <div
+                    class="contact-info__wrapper"
+                    data-aos="fade-down-right"
+                    data-aos-delay="100"
+                    data-aos-duration="500"
+                >
                     <div class="contact-info location-info">
                         <h4>Office Location:</h4>
                         <p>3rd Floor, Green Park, Bengaluru</p>
@@ -362,7 +473,12 @@
                 </div>
                 <form action="/subscribe" class="contact-form__wrapper">
                     <div class="input-row">
-                        <div class="first-name input-wrapper">
+                        <div
+                            class="first-name input-wrapper"
+                            data-aos="fade-down-left"
+                            data-aos-delay="200"
+                            data-aos-duration="500"
+                        >
                             <label for="first_name">First Name*</label>
                             <input
                                 type="text"
@@ -370,7 +486,12 @@
                                 placeholder="First name"
                             />
                         </div>
-                        <div class="last-name input-wrapper">
+                        <div
+                            class="last-name input-wrapper"
+                            data-aos="fade-down-left"
+                            data-aos-delay="300"
+                            data-aos-duration="500"
+                        >
                             <label for="last_name">Last Name*</label>
                             <input
                                 type="text"
@@ -380,7 +501,12 @@
                         </div>
                     </div>
                     <div class="input-row">
-                        <div class="input-wrapper">
+                        <div
+                            class="input-wrapper"
+                            data-aos="fade-down-left"
+                            data-aos-delay="300"
+                            data-aos-duration="500"
+                        >
                             <label for="email">Email*</label>
                             <input
                                 type="email"
@@ -388,7 +514,12 @@
                                 placeholder="Email address"
                             />
                         </div>
-                        <div class="input-wrapper">
+                        <div
+                            class="input-wrapper"
+                            data-aos="fade-down-left"
+                            data-aos-delay="400"
+                            data-aos-duration="500"
+                        >
                             <label for="select"
                                 >How did you hear about us?</label
                             >
@@ -399,7 +530,12 @@
                             />
                         </div>
                     </div>
-                    <div class="input-wrapper">
+                    <div
+                        class="input-wrapper"
+                        data-aos="fade-down-left"
+                        data-aos-delay="500"
+                        data-aos-duration="500"
+                    >
                         <label for="message">Message</label>
                         <textarea
                             id="message"
@@ -425,7 +561,13 @@
             <h2 class="title">Our Shop</h2>
 
             <div class="site-our-shop container">
-                <div class="shop-card">
+                <div
+                    class="shop-card"
+                    data-aos="zoom-in"
+                    data-aos-delay="100"
+                    data-aos-duration="1400"
+                    data-aos-offset="80"
+                >
                     <img src="images/our-shop/pc.jpeg" alt="pc" />
                     <div class="card-content">
                         <h5 class="shop-status">NEW</h5>
@@ -434,7 +576,13 @@
                     </div>
                 </div>
 
-                <div class="shop-card">
+                <div
+                    class="shop-card"
+                    data-aos="zoom-in"
+                    data-aos-delay="200"
+                    data-aos-duration="1400"
+                    data-aos-offset="80"
+                >
                     <img src="images/our-shop/xbox.jpeg" alt="xbox" />
                     <div class="card-content">
                         <h5 class="shop-status">Popular</h5>
@@ -443,7 +591,13 @@
                     </div>
                 </div>
 
-                <div class="shop-card">
+                <div
+                    class="shop-card"
+                    data-aos="zoom-in"
+                    data-aos-delay="300"
+                    data-aos-duration="1400"
+                    data-aos-offset="80"
+                >
                     <img src="images/our-shop/keyboard.jpeg" alt="keyboard" />
                     <div class="card-content">
                         <h5 class="shop-status">NEW</h5>
@@ -452,7 +606,13 @@
                     </div>
                 </div>
 
-                <div class="shop-card">
+                <div
+                    class="shop-card"
+                    data-aos="zoom-in"
+                    data-aos-delay="400"
+                    data-aos-duration="1400"
+                    data-aos-offset="80"
+                >
                     <img
                         src="images/our-shop/headphones.jpg"
                         alt="headphones"
@@ -478,7 +638,13 @@
             <h2 class="title">Latest News</h2>
 
             <div class="site-latest-news container">
-                <div class="news-card">
+                <div
+                    class="news-card"
+                    data-aos="zoom-in"
+                    data-aos-delay="100"
+                    data-aos-duration="1400"
+                    data-aos-offset="80"
+                >
                     <img
                         src="images/latest-news/shadowgun.png"
                         alt="shadowgun"
@@ -492,7 +658,13 @@
                     </div>
                 </div>
 
-                <div class="news-card">
+                <div
+                    class="news-card"
+                    data-aos="zoom-in"
+                    data-aos-delay="200"
+                    data-aos-duration="1400"
+                    data-aos-offset="80"
+                >
                     <img src="images/latest-news/valorant.png" alt="valorant" />
                     <div class="card-content">
                         <h6 class="news-status-date">Trending Aug 27, 2023</h6>
@@ -502,7 +674,13 @@
                     </div>
                 </div>
 
-                <div class="news-card">
+                <div
+                    class="news-card"
+                    data-aos="zoom-in"
+                    data-aos-delay="300"
+                    data-aos-duration="1400"
+                    data-aos-offset="80"
+                >
                     <img
                         src="images/latest-news/coder-man.jpeg"
                         alt="coder-man"
@@ -515,7 +693,13 @@
                     </div>
                 </div>
 
-                <div class="news-card">
+                <div
+                    class="news-card"
+                    data-aos="zoom-in"
+                    data-aos-delay="400"
+                    data-aos-duration="1400"
+                    data-aos-offset="80"
+                >
                     <img
                         src="images/latest-news/headphones.png"
                         alt="coder-man"
@@ -540,7 +724,13 @@
         <!-- JOIN - TOURNAMENT - SECTION START -->
 
         <section id="join-tournament">
-            <div class="site-join-tournament container">
+            <div
+                class="site-join-tournament container"
+                data-aos="flip-down"
+                data-aos-delay="100"
+                data-aos-duration="1400"
+                data-aos-offset="80"
+            >
                 <div class="lavel-up">
                     <div class="astro-logo">
                         <img src="icons/header__astro-logo.png" alt="" />
@@ -561,18 +751,62 @@
         <footer id="footer">
             <div class="site-footer container">
                 <div class="footer-items">
-                    <img src="/icons/header__astro-logo.png" alt="" />
+                    <img
+                        src="/icons/header__astro-logo.png"
+                        alt="astro logo"
+                        data-aos="fade-down"
+                        data-aos-delay="200"
+                        data-aos-duration="800"
+                        data-aos-offset="80"
+                    />
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Sponsorships</a></li>
-                        <li><a href="#">Join Us</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li
+                            data-aos="fade-left"
+                            data-aos-delay="300"
+                            data-aos-duration="800"
+                        >
+                            <a href="#">About Us</a>
+                        </li>
+                        <li
+                            data-aos="fade-left"
+                            data-aos-delay="350"
+                            data-aos-duration="800"
+                        >
+                            <a href="#">Sponsorships</a>
+                        </li>
+                        <li
+                            data-aos="fade-left"
+                            data-aos-delay="400"
+                            data-aos-duration="800"
+                        >
+                            <a href="#">Join Us</a>
+                        </li>
+                        <li
+                            data-aos="fade-left"
+                            data-aos-delay="450"
+                            data-aos-duration="800"
+                        >
+                            <a href="#">Terms & Conditions</a>
+                        </li>
+                        <li
+                            data-aos="fade-left"
+                            data-aos-delay="500"
+                            data-aos-duration="800"
+                        >
+                            <a href="#">Privacy Policy</a>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="footer-form__follow-us">
-                    <form action="/sign-up" class="newsletter-signup">
+                    <form
+                        action="/sign-up"
+                        class="newsletter-signup"
+                        data-aos="fade-right"
+                        data-aos-delay="200"
+                        data-aos-duration="800"
+                        data-aos-offset="80"
+                    >
                         <h4 class="footer-title">Newsletter signup</h4>
                         <div class="footer-sign-up">
                             <input type="text" placeholder="Enter your email" />
@@ -583,29 +817,49 @@
                     </form>
 
                     <div class="follow-us">
-                        <h4 class="footer-title">Follow us</h4>
+                        <h4
+                            class="footer-title"
+                            data-aos="zoom-in-down"
+                            data-aos-delay="200"
+                            data-aos-duration="800"
+                            data-aos-offset="80"
+                        >
+                            Follow us
+                        </h4>
                         <div class="socials">
                             <a
                                 href="https://www.facebook.com/profile.php?id=100075801456756"
                                 target="_blank"
+                                data-aos="zoom-in-up"
+                                data-aos-delay="750"
+                                data-aos-duration="800"
                             >
                                 <i class="fa-brands fa-facebook"></i>
                             </a>
                             <a
                                 href="https://www.instagram.com/alishersatimov_/"
                                 target="_blank"
+                                data-aos="zoom-in-up"
+                                data-aos-delay="850"
+                                data-aos-duration="800"
                             >
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                             <a
                                 href="https://www.youtube.com/@lider717"
                                 target="_blank"
+                                data-aos="zoom-in-up"
+                                data-aos-delay="950"
+                                data-aos-duration="800"
                             >
                                 <i class="fa-brands fa-youtube"></i>
                             </a>
                             <a
                                 href="https://discord.com/users/alishersatimov#3440"
                                 target="_blank"
+                                data-aos="zoom-in-up"
+                                data-aos-delay="1050"
+                                data-aos-duration="800"
                             >
                                 <i class="fa-brands fa-discord"></i>
                             </a>
@@ -619,5 +873,10 @@
         </footer>
 
         <!-- SITE - FOOTER - END -->
+        <script src="js/script.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
