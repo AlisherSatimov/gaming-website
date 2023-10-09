@@ -79,7 +79,7 @@
     }
 
     .btn-primary {
-        margin: 18px 0;
+        margin: 18px 0 0;
     }
 }
 
@@ -94,13 +94,17 @@
                 display: none;
             }
         }
+
+        .btn-primary {
+            margin: 16px 0 0;
+        }
     }
 }
 
 @media only screen and (max-width: 768px) {
     #tournaments {
         .game-card {
-            width: 335px;
+            width: 100%;
 
             &:nth-child(4) {
                 display: none;

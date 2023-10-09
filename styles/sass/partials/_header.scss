@@ -68,7 +68,7 @@
         .nav-menu {
             display: none;
             width: 100%;
-            height: 670px;
+            height: 100vh;
             padding: 20px 40px;
             background-color: #040d17;
             overflow: hidden;
@@ -190,10 +190,6 @@
                     width: 32px;
                     height: 32px;
                 }
-            }
-
-            .nav-menu {
-                width: 375px;
             }
         }
     }

@@ -15,8 +15,6 @@
             rgba(7, 22, 38, 0) 136.66%
         );
 
-        margin-bottom: 30px;
-
         &:nth-child(4) {
             display: none;
         }
@@ -38,7 +36,7 @@
     }
 
     .shop-status {
-        color: $shop-status-col;
+        color: $card-status-col;
         font-family: "Inter";
         font-size: 16px;
         font-style: normal;
@@ -71,7 +69,7 @@
     }
 
     .btn-primary {
-        margin: 16px 0 0;
+        margin: 48px 0 0;
     }
 }
 

@@ -539,7 +539,7 @@ section .title::after, section #about-us .site-about-us h2::after, #about-us .si
 #site-header-hero .site-navbar .nav-menu {
   display: none;
   width: 100%;
-  height: 670px;
+  height: 100vh;
   padding: 20px 40px;
   background-color: #040d17;
   overflow: hidden;
@@ -639,9 +639,6 @@ section .title::after, section #about-us .site-about-us h2::after, #about-us .si
   #site-header-hero .site-navbar label img {
     width: 32px;
     height: 32px;
-  }
-  #site-header-hero .site-navbar .nav-menu {
-    width: 375px;
   }
 }
 .site-hero {
@@ -749,6 +746,81 @@ section .title::after, section #about-us .site-about-us h2::after, #about-us .si
     margin: 16px 0 51px;
   }
 }
+#latest-news .site-latest-news {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#latest-news .news-card {
+  width: 370px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: linear-gradient(134deg, #071626 -7.75%, rgba(7, 22, 38, 0) 136.66%);
+}
+#latest-news .news-card img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  margin-top: -5px;
+}
+#latest-news .news-card:nth-child(4) {
+  display: none;
+}
+#latest-news .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+}
+#latest-news .news-status-date {
+  color: #dbdbdb;
+  font-family: "Inter";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+#latest-news .news-title {
+  color: #f5f5f5;
+  font-family: "Oxanium";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+#latest-news .btn-primary {
+  margin: 48px 0 0;
+}
+
+@media only screen and (max-width: 1170px) {
+  #latest-news .news-card {
+    width: 334px;
+    margin-bottom: 24px;
+  }
+  #latest-news .news-card:nth-child(4) {
+    display: inline-block;
+  }
+  #latest-news .news-status-date {
+    font-size: 14px;
+  }
+  #latest-news .news-title {
+    font-size: 20px;
+  }
+  #latest-news .btn-primary {
+    margin: 16px 0 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #latest-news .news-card {
+    width: 100%;
+  }
+  #latest-news .news-card:nth-child(4) {
+    display: none;
+  }
+}
 #our-shop .site-our-shop {
   display: flex;
   justify-content: space-between;
@@ -759,7 +831,6 @@ section .title::after, section #about-us .site-about-us h2::after, #about-us .si
   border-radius: 10px;
   overflow: hidden;
   background: linear-gradient(134deg, #071626 -7.75%, rgba(7, 22, 38, 0) 136.66%);
-  margin-bottom: 30px;
 }
 #our-shop .shop-card:nth-child(4) {
   display: none;
@@ -810,7 +881,7 @@ section .title::after, section #about-us .site-about-us h2::after, #about-us .si
   padding: 0;
 }
 #our-shop .btn-primary {
-  margin: 16px 0 0;
+  margin: 48px 0 0;
 }
 
 @media only screen and (max-width: 1170px) {
@@ -913,7 +984,7 @@ section .title::after, section #about-us .site-about-us h2::after, #about-us .si
   line-height: normal;
 }
 #tournaments .btn-primary {
-  margin: 18px 0;
+  margin: 18px 0 0;
 }
 
 @media only screen and (max-width: 1170px) {
@@ -924,10 +995,13 @@ section .title::after, section #about-us .site-about-us h2::after, #about-us .si
   #tournaments .game-card:nth-child(5), #tournaments .game-card:nth-child(6) {
     display: none;
   }
+  #tournaments .btn-primary {
+    margin: 16px 0 0;
+  }
 }
 @media only screen and (max-width: 768px) {
   #tournaments .game-card {
-    width: 335px;
+    width: 100%;
   }
   #tournaments .game-card:nth-child(4) {
     display: none;
@@ -945,6 +1019,6 @@ section .title::after, section #about-us .site-about-us h2::after, #about-us .si
 @media only screen and (max-width: 768px) {
   .container {
     max-width: 375px;
-    padding: 20px 20px;
+    padding: 20px 20px 0;
   }
 }/*# sourceMappingURL=main.css.map */
