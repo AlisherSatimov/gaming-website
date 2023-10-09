@@ -1,0 +1,99 @@
+#join-tournament {
+    margin: 80px 0;
+
+    .site-join-tournament {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 75px;
+        background: url(/images/joun-tournament-bg.png);
+        clip-path: polygon(2% 0, 100% 0%, 98% 100%, 0% 100%);
+    }
+
+    .lavel-up {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .astro-logo {
+        width: 90px;
+        height: 90px;
+        background: linear-gradient(150deg, #0a1f35 -10.24%, #040d17 161.22%);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 58.5px;
+        }
+    }
+
+    .lavel-up__title {
+        width: 570px;
+        color: $light;
+        font-family: "Oxanium";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 160%;
+    }
+
+    .btn-primary {
+        padding: 20px 35px;
+        background: linear-gradient(96deg, #0b2f3e -3.35%, #06202a 113.64%),
+            #1a4d62;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1170px) {
+    #join-tournament {
+        margin: 80px 0 40px;
+
+        .site-join-tournament {
+            flex-direction: column;
+            padding: 30px 100px;
+            gap: 24px;
+        }
+
+        .lavel-up {
+            width: 100%;
+
+            gap: 24px;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .astro-logo {
+            width: 60px;
+            height: 60px;
+
+            img {
+                width: 39px;
+            }
+        }
+
+        .lavel-up__title {
+            width: 100%;
+            font-size: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #join-tournament {
+        .site-join-tournament {
+            flex-direction: column;
+            padding: 24px 30px;
+            gap: 24px;
+        }
+
+        .lavel-up__title {
+            font-size: 16px;
+        }
+    }
+}
