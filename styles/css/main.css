@@ -216,8 +216,8 @@ button,
 }
 
 .threeLoader {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -401,6 +401,15 @@ button,
     display: inline-flex;
     margin-top: auto;
     text-align: center;
+  }
+  #about-us .about-img {
+    width: 100%;
+  }
+  #about-us .about-us__content {
+    width: 100%;
+  }
+  #about-us .about-us__content .live-tables {
+    width: 100%;
   }
 }
 #contact-us .site-contact-us {
