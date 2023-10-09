@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar {
@@ -141,9 +142,15 @@ section {
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            background-color: #00eebd;
+            background-color: $title-bottom-row;
         }
     }
+}
+
+button,
+.button {
+    border: inherit;
+    color: $light;
 }
 
 @media only screen and (max-width: 1170px) {
