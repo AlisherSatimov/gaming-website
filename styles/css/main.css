@@ -749,6 +749,103 @@ section .title::after, section #about-us .site-about-us h2::after, #about-us .si
     margin: 16px 0 51px;
   }
 }
+#our-shop .site-our-shop {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#our-shop .shop-card {
+  width: 370px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: linear-gradient(134deg, #071626 -7.75%, rgba(7, 22, 38, 0) 136.66%);
+  margin-bottom: 30px;
+}
+#our-shop .shop-card:nth-child(4) {
+  display: none;
+}
+#our-shop .shop-card img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center bottom;
+     object-position: center bottom;
+  overflow: hidden;
+}
+#our-shop .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+#our-shop .shop-status {
+  color: #dbdbdb;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+#our-shop .shop-name {
+  color: #f5f5f5;
+  font-family: "Oxanium";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  margin: 16px 0 4px;
+}
+#our-shop .shop-price {
+  color: #f5f5f5;
+  font-family: "Oxanium";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin: 0;
+  padding: 0;
+}
+#our-shop .btn-primary {
+  margin: 16px 0 0;
+}
+
+@media only screen and (max-width: 1170px) {
+  #our-shop .shop-card {
+    width: 334px;
+    margin-bottom: 34px;
+  }
+  #our-shop .shop-card:nth-child(4) {
+    display: inline-block;
+  }
+  #our-shop .shop-status {
+    font-size: 14px;
+  }
+  #our-shop .shop-name {
+    font-size: 20px;
+    margin: 10px 0 4px;
+  }
+  #our-shop .shop-price {
+    font-size: 16px;
+  }
+  #our-shop .btn-primary {
+    margin: 8px 0 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #our-shop .shop-card {
+    margin-bottom: 24px;
+  }
+  #our-shop .shop-card:nth-child(4) {
+    display: none;
+  }
+  #our-shop .btn-primary {
+    margin: 16px 0 0;
+  }
+}
 #tournaments .site-tournaments {
   display: flex;
   justify-content: space-between;

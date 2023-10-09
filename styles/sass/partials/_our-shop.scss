@@ -1,0 +1,122 @@
+#our-shop {
+    .site-our-shop {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .shop-card {
+        width: 370px;
+        border-radius: 10px;
+        overflow: hidden;
+        background: linear-gradient(
+            134deg,
+            #071626 -7.75%,
+            rgba(7, 22, 38, 0) 136.66%
+        );
+
+        margin-bottom: 30px;
+
+        &:nth-child(4) {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: center bottom;
+            overflow: hidden;
+        }
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .shop-status {
+        color: $shop-status-col;
+        font-family: "Inter";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+    }
+
+    .shop-name {
+        color: $body-light-col;
+        font-family: "Oxanium";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        margin: 16px 0 4px;
+    }
+
+    .shop-price {
+        color: $body-light-col;
+        font-family: "Oxanium";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .btn-primary {
+        margin: 16px 0 0;
+    }
+}
+
+@media only screen and (max-width: 1170px) {
+    #our-shop {
+        .shop-card {
+            width: 334px;
+            margin-bottom: 34px;
+
+            &:nth-child(4) {
+                display: inline-block;
+            }
+        }
+
+        .shop-status {
+            font-size: 14px;
+        }
+
+        .shop-name {
+            font-size: 20px;
+            margin: 10px 0 4px;
+        }
+
+        .shop-price {
+            font-size: 16px;
+        }
+
+        .btn-primary {
+            margin: 8px 0 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #our-shop {
+        .shop-card {
+            margin-bottom: 24px;
+
+            &:nth-child(4) {
+                display: none;
+            }
+        }
+
+        .btn-primary {
+            margin: 16px 0 0;
+        }
+    }
+}
