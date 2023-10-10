@@ -5,6 +5,17 @@
         flex-wrap: wrap;
     }
 
+    a {
+        transition: 0.3s;
+        &:hover {
+            transform: translate(5px, -5px);
+        }
+
+        &:nth-child(4) {
+            display: none;
+        }
+    }
+
     .shop-card {
         width: 370px;
         border-radius: 10px;
@@ -14,10 +25,6 @@
             #071626 -7.75%,
             rgba(7, 22, 38, 0) 136.66%
         );
-
-        &:nth-child(4) {
-            display: none;
-        }
 
         img {
             width: 100%;
@@ -75,13 +82,14 @@
 
 @media only screen and (max-width: 1170px) {
     #our-shop {
-        .shop-card {
-            width: 334px;
-            margin-bottom: 34px;
-
+        a {
             &:nth-child(4) {
                 display: inline-block;
             }
+        }
+        .shop-card {
+            width: 334px;
+            margin-bottom: 34px;
         }
 
         .shop-status {
@@ -105,12 +113,13 @@
 
 @media only screen and (max-width: 768px) {
     #our-shop {
-        .shop-card {
-            margin-bottom: 24px;
-
+        a {
             &:nth-child(4) {
                 display: none;
             }
+        }
+        .shop-card {
+            margin-bottom: 24px;
         }
 
         .btn-primary {

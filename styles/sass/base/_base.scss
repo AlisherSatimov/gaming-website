@@ -182,6 +182,11 @@ button,
     transform: skewX(-10deg);
     display: inline-block;
     margin: 32px 0;
+    transition: 0.3s;
+
+    &:hover {
+        transform: skewX(0deg);
+    }
 }
 
 .btn-primary {
@@ -195,6 +200,11 @@ button,
     transform: skewX(-10deg);
     display: inline-block;
     margin: 32px 0;
+    transition: 0.3s;
+
+    &:hover {
+        transform: skewX(0deg);
+    }
 }
 
 .center {

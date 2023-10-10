@@ -5,6 +5,13 @@
         flex-wrap: wrap;
     }
 
+    a {
+        transition: 0.3s;
+        &:hover {
+            transform: translate(5px, -5px);
+        }
+    }
+
     .game-card {
         width: 370px;
         border-radius: 10px;
@@ -85,14 +92,15 @@
 
 @media only screen and (max-width: 1170px) {
     #tournaments {
-        .game-card {
-            width: 334px;
-            margin-bottom: 24px;
-
+        a {
             &:nth-child(5),
             &:nth-child(6) {
                 display: none;
             }
+        }
+        .game-card {
+            width: 334px;
+            margin-bottom: 24px;
         }
 
         .btn-primary {
@@ -103,12 +111,13 @@
 
 @media only screen and (max-width: 768px) {
     #tournaments {
-        .game-card {
-            width: 100%;
-
+        a {
             &:nth-child(4) {
                 display: none;
             }
+        }
+        .game-card {
+            width: 100%;
         }
         .btn-primary {
             margin: 0;
